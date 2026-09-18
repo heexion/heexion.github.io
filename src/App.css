@@ -1,0 +1,284 @@
+#root {
+  width: 100%;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.hero-content {
+  max-width: 950px;
+}
+
+.eyebrow,
+.section-number,
+.project-type,
+.experience-type {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #777;
+}
+
+.hero h1 {
+  margin: 24px 0;
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 1.18;
+  letter-spacing: -0.05em;
+}
+
+.hero-description {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.hero-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 42px;
+}
+
+.hero-links a {
+  padding: 13px 22px;
+  border: 1px solid #1a1a1a;
+  border-radius: 100px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.hero-links a:hover {
+  color: white;
+  background: #1a1a1a;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 48px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.section h2 {
+  margin: 10px 0 60px;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.strength-grid article {
+  border-top: 2px solid #1a1a1a;
+  padding-top: 24px;
+}
+
+.strength-grid span {
+  color: #999;
+  font-size: 13px;
+}
+
+.strength-grid h3 {
+  margin: 24px 0 14px;
+  font-size: 24px;
+}
+
+.strength-grid p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.tech-list,
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list span,
+.project-tech span {
+  padding: 10px 16px;
+  background: #f2f2f2;
+  border-radius: 100px;
+  font-size: 14px;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.project-placeholder {
+  aspect-ratio: 16 / 10;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.project-content h3 {
+  margin: 8px 0;
+  font-size: 42px;
+}
+
+.project-period {
+  color: #999;
+}
+
+.project-description {
+  margin: 30px 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+.project-role {
+  font-weight: 700;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  min-height: 270px;
+  padding: 30px;
+  background: #f6f6f6;
+  border-radius: 18px;
+}
+
+.project-card > p:first-child {
+  color: #888;
+  font-size: 13px;
+}
+
+.project-card h3 {
+  margin: 12px 0 4px;
+  font-size: 28px;
+}
+
+.project-card span {
+  color: #999;
+  font-size: 13px;
+}
+
+.project-card > p:last-child {
+  margin-top: 35px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+}
+
+.experience h3 {
+  font-size: 30px;
+}
+
+.experience-description > p {
+  margin-top: 0;
+  color: #555;
+  line-height: 1.8;
+}
+
+.metrics {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.metrics div {
+  display: flex;
+  flex-direction: column;
+}
+
+.metrics strong {
+  font-size: 40px;
+}
+
+.metrics span {
+  margin-top: 6px;
+  color: #888;
+  font-size: 13px;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 48px 180px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.contact > p {
+  color: #888;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.contact h2 {
+  margin: 24px 0 50px;
+  font-size: clamp(40px, 5vw, 64px);
+  letter-spacing: -0.05em;
+}
+
+.contact a {
+  font-weight: 700;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .section,
+  .contact {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .strength-grid,
+  .project-grid,
+  .featured-project,
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .featured-project {
+    gap: 30px;
+  }
+
+  .metrics {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
