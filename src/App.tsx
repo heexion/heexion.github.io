@@ -198,11 +198,7 @@ const projects = [
       {
         value: "PM · Lead",
         label: "담당 역할",
-      },
-      {
-        value: "5개",
-        label: "핵심 기능 영역",
-      },
+      }
     ],
 
     contributions: [
@@ -275,11 +271,7 @@ const projects = [
       {
         value: "PM · Web",
         label: "담당 역할",
-      },
-      {
-        value: "2차",
-        label: "MVP 개발 중",
-      },
+      }
     ],
 
     contributions: [
@@ -292,13 +284,13 @@ const projects = [
     ],
 
     challenges: [
-        {
-          title: "제품 중심의 정보 구조 설계",
-          problem:
-            "제품 등록, 보증과 수리 정보가 기능별로 분리되면 사용자가 하나의 제품에 대한 관리 이력을 연속적으로 확인하기 어려웠습니다.",
-          solution:
-            "제품을 중심 데이터로 두고 등록 정보와 보증·수리 데이터를 연결했습니다. 제품 상세 화면을 기준으로 관련 정보를 확인할 수 있도록 화면과 데이터 흐름을 구성했습니다.",
-        },
+      {
+        title: "알림 상태의 일관된 관리",
+        problem:
+          "알림 목록에서 개별 읽음, 전체 읽음, 선택 삭제가 발생할 때 각 변경 사항을 동일한 상태 기준으로 일관되게 반영해야 했습니다.",
+        solution:
+          "Zustand Store에 알림 목록과 상태 변경 로직을 통합해 개별 읽음·전체 읽음·선택 삭제가 하나의 상태를 기준으로 동작하도록 구성했습니다.",
+      },
         {
           title: "비동기 챗봇 응답과 화면 상태 관리",
           problem:
@@ -351,11 +343,7 @@ const projects = [
       {
         value: "Web",
         label: "담당 역할",
-      },
-      {
-        value: "2개",
-        label: "사용자 역할",
-      },
+      }
     ],
 
     contributions: [
@@ -426,11 +414,7 @@ const projects = [
       {
         value: "Lead",
         label: "담당 역할",
-      },
-      {
-        value: "4개",
-        label: "핵심 기능 영역",
-      },
+      }
     ],
 
     contributions: [
